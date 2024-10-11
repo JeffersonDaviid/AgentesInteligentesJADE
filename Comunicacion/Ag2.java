@@ -25,7 +25,7 @@ public class Ag2 extends Agent {
         @Override
         public void action() {
             ACLMessage acl = blockingReceive();
-            System.out.println("Hola, q gusto "+acl.getSender()+", yo soy "+getAgent().getName());
+            System.out.println("Hola, q gusto " + acl.getSender() + ", yo soy " + getAgent().getName());
             doDelete();
         }
 

@@ -25,7 +25,8 @@ public class Ag1 extends Agent {
 
         @Override
         public void action() {
-            new EnviarMensaje().enviarMensajeString(ACLMessage.INFORM, "Ag2", getAgent(), "Hola Agente, soy " + getAgent().getName(),
+            new EnviarMensaje().enviarMensajeString(ACLMessage.INFORM, "Ag2", getAgent(),
+                    "Hola Agente, soy " + getAgent().getName(),
                     "COD001");
         }
 

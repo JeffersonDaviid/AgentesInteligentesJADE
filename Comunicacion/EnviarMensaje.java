@@ -27,7 +27,7 @@ public class EnviarMensaje {
         id.setLocalName(receptor);
         acl.addReceiver(id);
         acl.setSender(agenteEmisor.getAID());
-//                    acl.setEncoding("utf8mb4");
+        // acl.setEncoding("utf8mb4");
         acl.setLanguage(FIPANames.ContentLanguage.FIPA_SL);
         try {
             acl.setContentObject(contenido);
@@ -45,7 +45,7 @@ public class EnviarMensaje {
         id.setLocalName(receptor);
         acl.addReceiver(id);
         acl.setSender(agenteEmisor.getAID());
-//                    acl.setEncoding("utf8mb4");
+        // acl.setEncoding("utf8mb4");
         acl.setLanguage(FIPANames.ContentLanguage.FIPA_SL);
         acl.setContent(contenido);
         acl.setConversationId(conversationID);

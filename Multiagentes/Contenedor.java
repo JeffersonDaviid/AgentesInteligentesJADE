@@ -44,7 +44,7 @@ public class Contenedor {
             mainContainer.createNewAgent("Ag2", Ag2.class.getName(), null).start();
             mainContainer.createNewAgent("Ag3", Ag3.class.getName(), null).start();
             mainContainer.createNewAgent("Ag4", Ag4.class.getName(), null).start();
-//
+            //
         } catch (StaleProxyException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();

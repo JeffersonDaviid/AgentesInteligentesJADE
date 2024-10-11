@@ -26,8 +26,9 @@ public class Ag4 extends Agent {
         @Override
         public void action() {
             ACLMessage acl = blockingReceive();
-            System.out.println("Hola, q gusto "+acl.getSender()+", yo soy "+getAgent().getName());
-            new EnviarMensaje().enviarMensajeString(ACLMessage.INFORM, "Ag1", getAgent(), "Hola Agente, soy " + getAgent().getName(),
+            System.out.println("Hola, q gusto " + acl.getSender() + ", yo soy " + getAgent().getName());
+            new EnviarMensaje().enviarMensajeString(ACLMessage.INFORM, "Ag1", getAgent(),
+                    "Hola Agente, soy " + getAgent().getName(),
                     "COD001");
         }
 

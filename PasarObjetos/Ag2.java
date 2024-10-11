@@ -31,7 +31,8 @@ public class Ag2 extends Agent {
             try {
                 ACLMessage acl = blockingReceive();
                 Cliente c = (Cliente) acl.getContentObject();
-                System.out.println("Recibí el Cliente: " + c.getNombre() + " " + c.getApellido() + " y vive en: " + c.getDireccion());
+                System.out.println("Recibí el Cliente: " + c.getNombre() + " " + c.getApellido() + " y vive en: "
+                        + c.getDireccion());
                 doDelete();
             } catch (UnreadableException ex) {
                 Logger.getLogger(Ag2.class.getName()).log(Level.SEVERE, null, ex);

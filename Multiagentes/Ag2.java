@@ -27,7 +27,8 @@ public class Ag2 extends Agent {
         public void action() {
             ACLMessage acl = blockingReceive();
             System.out.println("Hola, q gusto " + acl.getSender() + ", yo soy " + getAgent().getName());
-            new EnviarMensaje().enviarMensajeString(ACLMessage.INFORM, "Ag3", getAgent(), "Hola Agente, soy " + getAgent().getName(),
+            new EnviarMensaje().enviarMensajeString(ACLMessage.INFORM, "Ag3", getAgent(),
+                    "Hola Agente, soy " + getAgent().getName(),
                     "COD001");
         }
 
